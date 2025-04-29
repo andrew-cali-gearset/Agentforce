@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>v1</fullName>
+        <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Hi, I'm an AI service assistant. How can I help you?</message>
+                    <messageIdentifier>9e417940-1bf1-44b4-90d8-a34ac77107d4</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>e1637650-6236-440b-ac34-9b8bea660707</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>a6ca30c5-0086-4b31-b4b2-29a0be87446e</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Welcome</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Hi! I'm your helpful bot.</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Sorry, it looks like something has gone wrong.</message>
+                    <messageIdentifier>51e4dc53-9146-4d9a-8bb2-c062b48cabe0</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>20bef1dc-f6da-4098-a242-db7caeba3f66</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>45fbdbc6-1e2a-4d0f-95a9-665c2c80dced</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Error_Handling</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Unfortunately, a system error occurred. Let us start again.</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>One moment while I connect you to the next available service representative.</message>
+                    <messageIdentifier>2b487909-b322-4c0c-a3fb-6f5bdf1f75bb</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>648f79df-a677-447c-b60e-161a1e1014b7</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <conversationSystemMessage>
+                    <type>Transfer</type>
+                </conversationSystemMessage>
+                <stepIdentifier>e94d5f08-8295-45f7-b28f-4b7a8456bccc</stepIdentifier>
+                <type>SystemMessage</type>
+            </botSteps>
+            <developerName>Transfer_To_Agent</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Transfer To Agent</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <citationsEnabled>false</citationsEnabled>
+        <conversationDefinitionPlanners>
+            <genAiPlannerName>Internal_Support_Guidance</genAiPlannerName>
+        </conversationDefinitionPlanners>
+        <conversationVariables>
+            <dataType>Text</dataType>
+            <developerName>VerifiedCustomerId</developerName>
+            <label>VerifiedCustomerId</label>
+        </conversationVariables>
+        <entryDialog>Welcome</entryDialog>
+        <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+        <intentV3Enabled>false</intentV3Enabled>
+        <knowledgeActionEnabled>false</knowledgeActionEnabled>
+        <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+        <smallTalkEnabled>false</smallTalkEnabled>
+        <toneType>Casual</toneType>
+    </BotVersion>
